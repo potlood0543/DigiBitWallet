@@ -31,6 +31,38 @@ const WalletAddresses = ({ username }) => {
       description: 'Use this to receive assets on Ethereum',
       warning: 'Only send Ethereum (ETH) assets to this address. Other assets will be lost forever.'
     },
+    usdt: {
+      name: 'USDT (ERC20)',
+      symbol: 'USDT',
+      address: '0x70dEc50c4fA7650feECfe478E1e4b7Dde52B697a',
+      color: '#26A17B',
+      description: 'Use this to receive USDT tokens on Ethereum',
+      warning: 'Only send USDT (ERC20) assets to this address. Other assets will be lost forever.'
+    },
+    bch: {
+      name: 'Bitcoin Cash',
+      symbol: 'BCH',
+      address: 'qzulvfrd9ph9p7d3n4pe2m9wvrh8v662qq9jrtr12w',
+      color: '#00AF41',
+      description: 'Use this to receive assets on Bitcoin Cash',
+      warning: 'Only send Bitcoin Cash (BCH) assets to this address. Other assets will be lost forever.'
+    },
+    xrp: {
+      name: 'XRP (Ripple)',
+      symbol: 'XRP',
+      address: 'rDD6nn6Rtge3bnirmkPriiCUqMmKC3hxFd',
+      color: '#23292F',
+      description: 'Use this to receive assets on XRP Ledger',
+      warning: 'Only send XRP (Ripple) assets to this address. Other assets will be lost forever.'
+    },
+    dgb: {
+      name: 'DigiByte',
+      symbol: 'DGB',
+      address: 'dgb1q0yzyvdsuwfef1cerzhx9ndgw8wrhaugijnh0trmf',
+      color: '#1E90FF',
+      description: 'Use this to receive assets on DigiByte',
+      warning: 'Only send DigiByte (DGB) assets to this address. Other assets will be lost forever.'
+    },
     polygon: {
       name: 'Polygon',
       symbol: 'POL',
@@ -62,6 +94,14 @@ const WalletAddresses = ({ username }) => {
       color: '#F3BA2F',
       description: 'Use this to receive assets on BNB Chain',
       warning: 'Only send BNB Smart Chain (BNB) assets to this address. Other assets will be lost forever.'
+    },
+    doge: {
+      name: 'Dogecoin',
+      symbol: 'DOGE',
+      address: 'DM6AEu4JjvPAd77pPhHEwpZFjuC3WuxqH8',
+      color: '#C1A634',
+      description: 'Use this to receive assets on Dogecoin',
+      warning: 'Only send Dogecoin (DOGE) assets to this address. Other assets will be lost forever.'
     }
   };
 
