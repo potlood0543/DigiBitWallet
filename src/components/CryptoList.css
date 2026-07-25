@@ -1,0 +1,187 @@
+.crypto-list-container {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.list-header h2 {
+  color: white;
+  font-size: 24px;
+  margin: 0;
+}
+
+.sort-options {
+  display: flex;
+  gap: 10px;
+}
+
+.sort-options button {
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.sort-options button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.sort-options button.active {
+  background: rgba(255, 255, 255, 0.95);
+  color: #667eea;
+  border-color: white;
+}
+
+.loading {
+  text-align: center;
+  color: white;
+  padding: 40px;
+  font-size: 18px;
+}
+
+.crypto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.crypto-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.crypto-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.crypto-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.rank-and-name {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.rank {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 12px;
+  min-width: 40px;
+  text-align: center;
+}
+
+.crypto-symbol {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
+
+.crypto-name {
+  font-size: 13px;
+  color: #999;
+  margin-top: 2px;
+}
+
+.change-badge {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.change-badge.positive {
+  background: #d4f8d4;
+  color: #22c55e;
+}
+
+.change-badge.negative {
+  background: #fdd3d3;
+  color: #ef4444;
+}
+
+.crypto-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+}
+
+.label {
+  color: #999;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.value {
+  color: #333;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.value.network {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@media (max-width: 768px) {
+  .list-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .crypto-grid {
+    grid-template-columns: 1fr;
+  }
+}
